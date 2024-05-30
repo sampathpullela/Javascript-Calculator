@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Module Assignment</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Include Bootstrap JavaScript dependencies -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>JavaScript Calculator</h1>
+
+    <!-- Input fields for Number-1, Operator, and Number-2 -->
+    <div class="row align-items-center">
+      <div class="col">
+        <!-- Label for Number-1 -->
+        <label for="number-one">Number-1</label><br />
+        <!-- Input field for Number-1 -->
+        <input type="number" placeholder="Enter Number-1" id="number-one" value=""/>
+      </div>
+      <div class="col">
+        <!-- Label for Operator -->
+        <label for="dropdown">Operator</label><br />
+        <!-- Dropdown for Operator -->
+        <select class="dropdown">
+          <option>Operator</option>
+          <option>+</option>
+          <option>-</option>
+          <option>*</option>
+          <option>/</option>
+        </select>
+      </div>
+      <div class="col">
+        <!-- Label for Number-2 -->
+        <label for="number-two">Number-2</label><br />
+        <!-- Input field for Number-2 -->
+        <input type="number" placeholder="Enter Number-2" id="number-two"/>
+      </div>
+    </div>
+    <!-- Button to trigger the calculation -->
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary" type="button" onclick="performAction()">Button</button>
+    </div>
+
+    <!-- Display result field -->
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <!-- Label for the result -->
+      <label for="result">Answer:</label><br />
+      <!-- Input field to display the result (disabled for read-only) -->
+      <input type="text" value="" id="result" disabled />
+    </div>
+
+    <!-- Include external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

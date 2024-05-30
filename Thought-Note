@@ -1,0 +1,26 @@
+1. I was creating a Simple UI based Javascript Calculator using technologies as HTML, CSS, Javascript, Bootstrap.
+
+2. In my overall application I have 3 files - 
+    a. index.html
+    b. style.css
+    c. script.js
+
+3.  It is having full of HTML elements and Tags, forms, buttons and script included.
+    By using Bootstrap I have used the class row and col to make the input tags in a row with responsive. (so it will be occupiied each of 4, i.e 4/12, 4/12, 4/12).
+
+4. I have created 2 input fields and 1 Select field, below the i have added a button with full length of viewport.
+   For this button I have added an onclick event - performAction(), so when it is clicked the function will get triggerd which is in script.js file.
+
+5. And at the end I have added result tag, it is a input field with 'Disable (read-only)' option so it will not allow us to write over in it.   Main purpose of this field is to show the results.
+
+6. Used Bootstrap classes and button to make the code simple and responsive and not to apply CSS seperatly.
+
+7. When coming to CSS code, I have added simple CSS to it, for body tag i have added display as flex so that i can arrange the items inside the body tag in a column direction.
+
+8. When coming to Javascript code, I have added the function "performAction()", inside this I wrote the code for getting the values from input fields.
+9. Next i have added the conditions to check the input field validations.
+10. Later in the Switch case i have added the main code, here it will check the operations and push into the HTML page by 'document.getEemnetById('').value = $';.
+
+11. For the input fields I have added event listners to make the result field blank every time I have clicked on input fields.
+
+

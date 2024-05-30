@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up flexbox for the body to arrange elements in a columnn */
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Set the gap between elements */
+  }
+  
+  /* Center-align the heading */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Apply full width to input and select elements inside elements with class row */
+  .row input,
+  .row select {
+    width: 100%;
+  }
+  
